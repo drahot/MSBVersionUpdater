@@ -119,7 +119,7 @@ public class MSBDialogFragment extends DialogFragment {
                         : getPositiveButtonText();
         String negativeButtonText =
                 TextUtils.isEmpty(getNegativeButtonText()) ? getString(R.string.update_cancel)
-                        : getPositiveButtonText();
+                        : getNegativeButtonText();
 
         updateInfo = (MSBUpdateInfo)getArguments().get(UPDATE_INFO);
 
